@@ -8,7 +8,7 @@
     * [UIkit reference](https://getuikit.com/docs/introduction)
     * [jQuery event reference](https://api.jquery.com/category/events/)
     * [jQuery effect reference](https://api.jquery.com/category/effects/)
-* [ ] Complete at least 1 user story for your site (on the back of your wireframe)
+* [ ] Complete at least 1 user story for your site (on the back of your wireframe).
 * [ ] Break up your project into tickets, and put your tickets up on the wall to keep track of your progress.
 * [ ] Pitch your project :) 
 
@@ -23,7 +23,7 @@
 * [ ] Add jQuery's document ready function to your JavaScript files.
     ```
     $( document ).ready(function() {
-      // Handler for .ready() called.
+      // write your code below
     });
     ```
 
