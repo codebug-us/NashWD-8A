@@ -4,7 +4,7 @@
 * [ ] Choose project "idea" and write it on the wall!
 * [ ] Wireframe your site. (You should have at least two pages on your final project)
     * [HTML tag reference](https://www.w3schools.com/tags/ref_byfunc.asp)
-    * [API reference](https://github.com/toddmotto/public-apis)
+    * [API list reference](https://github.com/toddmotto/public-apis)
     * [UIkit reference](https://getuikit.com/docs/introduction)
     * [jQuery event reference](https://api.jquery.com/category/events/)
     * [jQuery effect reference](https://api.jquery.com/category/effects/)
