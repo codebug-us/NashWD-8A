@@ -26,6 +26,8 @@
       // write your code below
     });
     ```
+* [ ] Add a `.gitignore` and `.surgeignore` file. Inside each of those files put `secrets.js`. This will exclude out secrets file when pushing to GitHub and deploying to surge.
+* Add a `secrets.js` file to store your api keys locally.
 
 
 ## Test your setup
@@ -34,6 +36,8 @@
 * [ ] Use `console.log` inside your JavaScript file and look for your message in the console once you refresh the page to make sure your JavaScript is hooked up properly.
 * [ ] Select your `<h1>` using jQuery and call `.fadeOut()` to make sure your jQuery is working.
 * [ ] Add a [UIkit heading class](https://getuikit.com/docs/heading) to your `<h1>` to make sure UIkit is working!
+* [ ] Push your code to GitHub and make sure that your `secrets.js` file did not get pushed!
+
 
 # CONGRATS! YOU'RE READY TO START CODING!
 
