@@ -15,7 +15,7 @@
 
 ## Code Project Setup
 * [ ] Use `touch` to create your html files, `styles.css`, and `script.js`. (You may use multiple javascript files and multiple CSS files if your prefer.)
-* [ ] Link your CSS file(s) inside your HTML files using something like  `<link rel="stylesheet" type="text/css" href="style.css">` in the `<head>` tag on all HTML files.
+* [ ] Link your CSS file(s) inside your HTML files using something like  `<link rel="stylesheet" type="text/css" href="styles.css">` in the `<head>` tag on all HTML files.
 * [ ] Link your jQuery by putting `<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>` in the `<head>` tag of all HTML files.
 * [ ] Link your JavaScript file(s) inside your HTML files using something like `<script type="text/javascript" src="script.js"></script>` in the `<head>` tag on all HTML files.
   > **NOTE** jQuery needs to be linked above your JavaScript files so that it is loaded into your JavaScript.
