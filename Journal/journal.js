@@ -18,7 +18,24 @@ $(document).ready(function(){
 			},
 			mapboxgl: mapboxgl
 		});
-		document.getElementById('geocoder').appendChild(geocoder.onAdd(map));
-
+		// document.getElementById('geocoder').appendChild(geocoder.onAdd(map));
+		// geocoder.on("results", function(results) {
+  // 			console.log(results);
+ 	// 	})
 });
 
+
+$("#submit-button").click(function(){
+	// var name = $("").val();
+	var type = $("type").val();
+	var startdate = $("startdate").val();
+	var enddate = $("enddate").val();
+	var favoriteMemory = $("favmem").val();
+	var funnyThings = $("funnyThings").val();
+	console.log(type);
+	console.log(startdate);
+	console.log(enddate);
+	console.log(favoriteMemory);
+	console.log(funnyThings);
+
+});
