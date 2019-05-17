@@ -12,6 +12,7 @@ $(document).ready(function(){
 		zoom: 1.5,
 		center: [40, 50],
 	});
+	map.addControl(new mapboxgl.NavigationControl(), 'bottom-right');
 	var geocoder = new MapboxGeocoder({
 		accessToken: mapboxgl.accessToken,
 		marker: {
@@ -59,10 +60,20 @@ $(document).ready(function(){
 		}
 	 }
 
+	var new_record_json = JSON.stringify(new_record);
 		$("body #map").on("submit", "#message-form", function(event){
 			event.preventDefault();
 			var inputs = $(".input-name").val();
 			console.log(inputs);
+
+			$.ajax ({
+			url: "https://api.airtable.com/v0/appGbyykGch5ePLkF/game_log?api_key=" + apiKey,
+			method: "POST",
+			contentType: "application/json",
+			data: new_record_json,
+
+
+		});
 
 
 		});

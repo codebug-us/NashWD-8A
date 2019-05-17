@@ -11,42 +11,86 @@
 	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 	  crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/css/uikit.min.css" />
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.min.js'></script>
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.css' type='text/css' />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/js/uikit.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/js/uikit-icons.min.js"></script>
 	<script type="text/javascript" src="../secrets.js"></script>
 	<script type="text/javascript" src="journal.js"></script>
 </head>
 <body>
-	<h1>Trip Journal: New entry</h1>
-	<form class="uk-form-stacked">
+
+    <div class="uk-card uk-card-large uk-card-default uk-margin-large uk-margin-large-left uk-margin-large-right uk-padding-large">
+	
+    <h1 id="heading"class="uk-heading-line uk-text-center"><span>Trip Journal</span></h1>
+    <h2 id="new-entry"><span uk-icon="plus"></span>New Entry</h2>
+	
+    <form class="uk-form-stacked">
 
     <div class="uk-margin">
-        <label class="uk-form-label" for="form-stacked-text">Text</label>
+        <label class=" prompts uk-form-label" for="form-stacked-text">Experience (City, hotel, sight, restaurant, etc) </label>
         <div class="uk-form-controls">
-            <input class="uk-input" id="form-stacked-text" type="text" placeholder="Some text...">
+            <div id='map'></div>
+            <div id='geocoder' class='geocoder'></div>
         </div>
     </div>
-
-    <div class="uk-margin">
-        <label class="uk-form-label" for="form-stacked-select">Select</label>
+    <div class=" uk-margin">
+        <label class="prompts uk-form-label" for="form-stacked-select">Type</label>
         <div class="uk-form-controls">
             <select class="uk-select" id="form-stacked-select">
-                <option>Option 01</option>
-                <option>Option 02</option>
+                <option>City</option>
+                <option>Hotel</option>
+                <option>Favorite restaurant</option>
+                <option>Beautiful sight</option>
+                <option>Activity</option>
+                <option>Relaxing beach</option>
+                <option>Shoping spot</option>
             </select>
         </div>
     </div>
 
     <div class="uk-margin">
-        <div class="uk-form-label">Radio</div>
+        <label class=" prompts uk-form-label" for="form-stacked-text">date (start and finish)</label>
         <div class="uk-form-controls">
-            <label><input class="uk-radio" type="radio" name="radio1"> Option 01</label><br>
-            <label><input class="uk-radio" type="radio" name="radio1"> Option 02</label>
+            <input class="uk-input" id="form-stacked-text" type="date" placeholder="Some text...">
+            <input class="uk-input" id="form-stacked-text" type="date" placeholder="Some text...">
+        </div>
+    <div class="uk-margin">
+            <label class=" prompts uk-form-label" for="form-stacked-text">Favorite/Unforgettable Memories</label>
+            <textarea class="uk-textarea" rows="5" placeholder="What'd the family do?"></textarea>
+        </div>
+        </div>
+    <div class="uk-margin">
+        <label class=" prompts uk-form-label" for="form-stacked-text">Funny thing(s) that happened</label>
+        <div class="uk-form-controls">
+            <textarea class="uk-textarea" rows="2" placeholder="What'd the family do?"></textarea>
         </div>
     </div>
+    <!-- <div class="uk-margin">
+        <label class=" prompts uk-form-label" for="form-stacked-text"></label>
+        <div class="uk-form-controls">
+            <input class="uk-input" id="form-stacked-text" type="text" placeholder="Some text...">
+        </div>
+    </div>
+    <div class="uk-margin">
+        <label class=" prompts uk-form-label" for="form-stacked-text">Favorite</label>
+        <div class="uk-form-controls">
+            <input class="uk-input" id="form-stacked-text" type="text" placeholder="Some text...">
+        </div>
+    </div> -->
 
-</form>
- 
+    
+    <div class="uk-margin">
+        <div class="uk-form-label">Would you suggest this to others?</div>
+        <div class="uk-form-controls">
+            <label><input class="uk-radio" type="radio" name="radio1"> yes, it was incredible</label><br>
+            <label><input class="uk-radio" type="radio" name="radio1"> Not particularly</label>
+        </div>
+    </div>
+    <input id='submit-button' type='submit' value='Add'>
+
+    </form>
+    </div>
 
 
 </body>
