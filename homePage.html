@@ -3,6 +3,7 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="secrets.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 	<!-- UIkit CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/css/uikit.min.css" />
@@ -13,6 +14,109 @@
 	<title>The Comeback</title>
 </head>
 <body>
-	<h1 class="uk-heading-bullet">Testing :)</h1>
+	<!-- nav bar -->
+	<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+	    <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
+	        <div class="uk-navbar-left">
+	            <ul class="uk-navbar-nav">
+	                <li class="uk-active"><a href="homePage.html">HOME</a></li>
+	                <li><a href="ourMoms.html">OUR MOMS</a></li>
+	                <li><a href="#">OUR COMPANIES</a></li>
+	                <li><a href="#">WHY MOMS?</a></li>
+	            </ul>
+	        </div>
+            <div class="uk-navbar-right">
+            	<div class="uk-navbar-item">
+    	        	<form action="javascript:void(0)">
+    	                <button class="uk-button uk-button-secondary">LOGIN</button>
+    	            </form>
+           	    </div>
+            </div>
+	    </nav>
+	</div>
+	<!-- title -->
+		<h1 id="comebackTitle1" class="uk-text-center uk-heading-medium uk-margin-remove-bottom">THE</h1>
+		<h1 id="comebackTitle2" class="uk-text-center uk-text-bold uk-heading-large uk-margin-remove-top uk-margin-medium-bottom">COMEBACK</h1>	
+	<!-- mission -->
+	<div class="uk-align-center uk-card uk-card-default uk-card-body">
+	    <h3 class="uk-card-title">Mission</h3>
+	    <p class="uk-margin-left">Our mission is to help mothers re-enter the workforce. This mission statement will be finalized later, and is currently a work in progress. Overall, we want to help those who raised us have an epic comeback to the professional world.</p>
+	</div>
+	<!-- join now text -->
+	<p class="uk-text-center uk-margin-medium-top uk-margin-remove-bottom">Ready for your comeback?</p>
+	<p class="uk-text-center uk-text-large uk-margin-remove-top">Join Now:</p>
+	<!-- join buttons -->
+	<p uk-margin>
+		<div class="uk-text-center">
+<!-- 		    <button class="uk-margin-right uk-width-1-3 uk-button uk-button-secondary">
+		    	<p class="uk-margin-top uk-text-large">COMPANY</p>
+		    </button> -->
+
+<!--start of copied text -->
+			<a class="uk-button uk-button-secondary" href="#modal-overflow" uk-toggle>Company</a>
+
+			<div id="modal-overflow" uk-modal>
+			    <div class="uk-modal-dialog">
+
+			        <button class="uk-modal-close-default" type="button" uk-close></button>
+
+			        <div class="uk-modal-header">
+			            <h2 class="uk-modal-title">Join using <span class="uk-text-bold"> LinkedIn </span></h2>
+			        </div>
+
+			        <div class="uk-modal-body" uk-overflow-auto>
+
+			            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			        </div>
+
+			        <div class="uk-modal-footer uk-text-right">
+			            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+			            <button class="uk-button uk-button-primary" type="button">Save</button>
+			        </div>
+
+			    </div>
+			</div>
+<!-- end of copied text  -->
+<!--start of copied text -->
+			<a class="uk-button uk-button-secondary" href="#modal-overflow" uk-toggle>Mom</a>
+
+			<div id="modal-overflow" uk-modal>
+			    <div class="uk-modal-dialog">
+
+			        <button class="uk-modal-close-default" type="button" uk-close></button>
+
+			        <div class="uk-modal-header">
+			            <h2 class="uk-modal-title">Join using <span class="uk-text-bold"> LinkedIn </span></h2>
+			        	
+			        </div>
+
+			        <div class="uk-modal-body" uk-overflow-auto>
+
+			            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			        </div>
+
+			        <div class="uk-modal-footer uk-text-right">
+			            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+			            <button class="uk-button uk-button-primary" type="button">Save</button>
+			        </div>
+
+			    </div>
+			</div>
+<!-- end of copied text  -->
+
+
+<!-- 		    <button class="uk-margin-left uk-width-1-3 uk-button uk-button-secondary">
+		    	<p class="uk-margin-top uk-text-large">MOM</p>
+		    </button> -->
+		</div>
+	</p>
+
+
+
+
+
+
 </body>
 </html>
